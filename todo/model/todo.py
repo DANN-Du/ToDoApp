@@ -24,3 +24,12 @@ class TodoBook:
         self.todos:dict [int.Todo] = {}
 
 
+    def add_todo (self, title: str, description: str) -> int:
+        id = len(self.todos) + 1
+        new_object= Todo(title, description)
+        self.todos [id] = new_object
+        return id
+
+
+
+
